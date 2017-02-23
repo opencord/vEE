@@ -1,0 +1,7 @@
+manifest
+vee_synchronizer_config
+start.sh
+stop.sh
+model-deps
+run.sh
+vee-synchronizer.py
