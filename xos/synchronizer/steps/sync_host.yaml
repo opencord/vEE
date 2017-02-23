@@ -1,0 +1,13 @@
+---
+- hosts: 127.0.0.1
+  connection: local
+
+  tasks:
+  - name: Add host entry for fabric
+    uri:
+      url: http://{{ rest_hostname }}:{{ rest_port }}/{{ rest_endpoint }}
+      method: POST
+      user: onos
+      password: rocks
+      body: '{{ rest_body }}'
+      body_format: json
