@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da141535_ed92ad9e",
+        "filename": "LICENSE.txt",
+        "patchSetId": 6
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1000029
+      },
+      "writtenOn": "2017-02-27T23:44:20Z",
+      "side": 1,
+      "message": "Is this correct? I thought we used an ON.Lab license (which is the same - or almost - to Apache2)?",
+      "revId": "c5660e48e710e5350b7471d9846686447835d536",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da141535_cd8fe974",
+        "filename": "xos/templates/veeadmin.html",
+        "patchSetId": 6
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1000029
+      },
+      "writtenOn": "2017-02-27T23:44:20Z",
+      "side": 1,
+      "message": "I think Matteo said we don\u0027t need this anymore? Or is this when refactoring is done?",
+      "revId": "c5660e48e710e5350b7471d9846686447835d536",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da141535_ad8cb580",
+        "filename": "xos/vee-onboard.yaml",
+        "patchSetId": 6
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1000029
+      },
+      "writtenOn": "2017-02-27T23:44:20Z",
+      "side": 1,
+      "message": "needed?",
+      "revId": "c5660e48e710e5350b7471d9846686447835d536",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    }
+  ]
+}
