@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "da141535_8dee918a",
+        "filename": "xos/models.py",
+        "patchSetId": 10
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000135
+      },
+      "writtenOn": "2017-02-28T22:29:18Z",
+      "side": 1,
+      "message": "Thanks for the pointer.\nWe are going to extends the scenario described in the demo by adding the EE and CPE nodes which both need to be aware of the the S-tag VlanId supplied by the vNode-Global app (metronet). So vNode-Local should be aware of vEE and vCPE and viceversa. Currently the psdw service lives inside the metronet-local repo, so either we separate them or we include also vEE and vCPE in that repo. I think we should evaluate the level of independence of those services to decide.\nIt\u0027s not even sure that we need two separate services for vCPE and vEE, even if that separation helps to understand the whole system at the high level, at the implementation level we can discuss how to handle them, because in ONOS they could live together as they are now in the CE app.",
+      "parentUuid": "da141535_8d60d136",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 9,
+        "endChar": 26
+      },
+      "revId": "14179a05454d7128386bdc33962af7c5602241d2",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "da141535_cdf12997",
         "filename": "xos/vee-onboard.yaml",
         "patchSetId": 10
