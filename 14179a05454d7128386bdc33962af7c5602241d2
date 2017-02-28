@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "da141535_8d60d136",
+        "filename": "xos/models.py",
+        "patchSetId": 10
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2017-02-28T21:14:39Z",
+      "side": 1,
+      "message": "No, if you look at the CORD repo there are multiple services and then they are binded together after in XOS. putting everything in the metro-net local is not the right way forward. THe nokia guys did a demo on how local and global interact \nhttps://wiki.opencord.org/display/CORD/XOS+metro-net+Service#XOSmetro-netService-Presentations\n\nAgreed on sync-up.",
+      "parentUuid": "da141535_cd76c906",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 9,
+        "endChar": 26
+      },
+      "revId": "14179a05454d7128386bdc33962af7c5602241d2",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "da141535_cdf12997",
         "filename": "xos/vee-onboard.yaml",
         "patchSetId": 10
