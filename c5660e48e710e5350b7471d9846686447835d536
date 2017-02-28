@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "da141535_edf50dcc",
+        "filename": "LICENSE.txt",
+        "patchSetId": 6
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2017-02-28T09:42:40Z",
+      "side": 1,
+      "message": "This is a good question, i copied it from the fabric app. i\u0027ll ask on the xos channel.",
+      "parentUuid": "da141535_ed92ad9e",
+      "revId": "c5660e48e710e5350b7471d9846686447835d536",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "da141535_cd8fe974",
         "filename": "xos/templates/veeadmin.html",
         "patchSetId": 6
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "da141535_cd0249b4",
+        "filename": "xos/templates/veeadmin.html",
+        "patchSetId": 6
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2017-02-28T09:42:40Z",
+      "side": 1,
+      "message": "I added the new UI to our manifest just yesterday since it was merged the day before. Doing some testing, will sync with Matteo today. Hopefully we can remove.",
+      "parentUuid": "da141535_cd8fe974",
+      "revId": "c5660e48e710e5350b7471d9846686447835d536",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "da141535_ad8cb580",
         "filename": "xos/vee-onboard.yaml",
         "patchSetId": 6
@@ -47,6 +83,24 @@
       "writtenOn": "2017-02-27T23:44:20Z",
       "side": 1,
       "message": "needed?",
+      "revId": "c5660e48e710e5350b7471d9846686447835d536",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da141535_adff15aa",
+        "filename": "xos/vee-onboard.yaml",
+        "patchSetId": 6
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2017-02-28T09:42:40Z",
+      "side": 1,
+      "message": "Same as before.",
+      "parentUuid": "da141535_ad8cb580",
       "revId": "c5660e48e710e5350b7471d9846686447835d536",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
       "unresolved": false
