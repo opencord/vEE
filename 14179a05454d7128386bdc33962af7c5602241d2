@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da141535_cdf12997",
+        "filename": "xos/vee-onboard.yaml",
+        "patchSetId": 10
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2017-02-28T17:29:18Z",
+      "side": 1,
+      "message": "delete",
+      "revId": "14179a05454d7128386bdc33962af7c5602241d2",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da141535_adeef5b2",
+        "filename": "xos/vee-onboard.yaml",
+        "patchSetId": 10
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2017-02-28T17:29:18Z",
+      "side": 1,
+      "message": "delete",
+      "revId": "14179a05454d7128386bdc33962af7c5602241d2",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    }
+  ]
+}
