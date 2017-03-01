@@ -1,0 +1,136 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da141535_48574703",
+        "filename": "app/src/main/java/org/opencord/vee/impl/EthernetEdge.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 141,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2017-03-01T11:25:09Z",
+      "side": 1,
+      "message": "have static import for better readability. Apply to following.",
+      "range": {
+        "startLine": 141,
+        "startChar": 37,
+        "endLine": 141,
+        "endChar": 69
+      },
+      "revId": "7afb71a79340e8c2345fbce5862951865d8dbf08",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da141535_08414f39",
+        "filename": "app/src/main/java/org/opencord/vee/impl/EthernetEdge.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 159,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2017-03-01T11:25:09Z",
+      "side": 1,
+      "message": "i believe this can be ported to a switch case",
+      "range": {
+        "startLine": 141,
+        "startChar": 8,
+        "endLine": 159,
+        "endChar": 9
+      },
+      "revId": "7afb71a79340e8c2345fbce5862951865d8dbf08",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da141535_e83dfbbc",
+        "filename": "app/src/main/java/org/opencord/vee/impl/EthernetEdge.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 168,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2017-03-01T11:25:09Z",
+      "side": 1,
+      "message": "this can be cached and reused",
+      "range": {
+        "startLine": 168,
+        "startChar": 36,
+        "endLine": 168,
+        "endChar": 61
+      },
+      "revId": "7afb71a79340e8c2345fbce5862951865d8dbf08",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da141535_c84a3755",
+        "filename": "app/src/main/java/org/opencord/vee/impl/EthernetEdge.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 322,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2017-03-01T11:25:09Z",
+      "side": 1,
+      "message": "should a warn be issued ?",
+      "revId": "7afb71a79340e8c2345fbce5862951865d8dbf08",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da141535_88743f9d",
+        "filename": "pom.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2017-03-01T11:25:09Z",
+      "side": 1,
+      "message": "I believe this has to be a different version due to",
+      "range": {
+        "startLine": 22,
+        "startChar": 17,
+        "endLine": 22,
+        "endChar": 22
+      },
+      "revId": "7afb71a79340e8c2345fbce5862951865d8dbf08",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da141535_a847034b",
+        "filename": "pom.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2017-03-01T11:25:09Z",
+      "side": 1,
+      "message": "these need to be there.",
+      "range": {
+        "startLine": 41,
+        "startChar": 0,
+        "endLine": 48,
+        "endChar": 11
+      },
+      "revId": "7afb71a79340e8c2345fbce5862951865d8dbf08",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    }
+  ]
+}
