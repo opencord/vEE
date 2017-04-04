@@ -1,6 +1,6 @@
-from synchronizers.base.syncstep import *
-from synchronizers.base.ansible_helper import *
-from services.vee.models import VEEService
+from synchronizers.new_base.ansible_helper import run_template_ssh #if needed
+from synchronizers.new_base.SyncInstanceUsingAnsible import SyncInstanceUsingAnsible
+from synchronizers.new_base.modelaccessor import *
 
 class SyncVEEService(SyncStep):
     provides=[VRouterTenant]

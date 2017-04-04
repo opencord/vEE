@@ -1,0 +1,9 @@
+FROM xosproject/xos-synchronizer-base:candidate
+
+ADD . /opt/xos/synchronizers/vee
+
+ENTRYPOINT []
+
+WORKDIR "/opt/xos/synchronizers/vee"
+
+CMD bash -c "cd /opt/xos/synchronizers/vee; ./run-from-api.sh"
