@@ -1,0 +1,7 @@
+option name = "vee";
+option verbose_name = "VEE Service";
+
+message VEEService(Service){
+     optional bool autoconfig = 1 [default = True, help_text="Autoconfigure VEE Service", null=False];
+}
+
