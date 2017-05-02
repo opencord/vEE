@@ -22,6 +22,30 @@
       "revId": "eddc744c5383e004de603f136a5f735a1793f216",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba092121_d08f7222",
+        "filename": "xos/synchronizer/Dockerfile.synchronizer",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2017-05-02T23:53:08Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ba092121_d0889224",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 37
+      },
+      "revId": "eddc744c5383e004de603f136a5f735a1793f216",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
     }
   ]
 }
