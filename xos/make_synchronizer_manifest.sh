@@ -14,5 +14,5 @@
 # limitations under the License.
 
 
-export XOS_DIR=/opt/xos
-nohup python vee-synchronizer.py  -C $XOS_DIR/synchronizers/vee/vee_synchronizer_config > /dev/null 2>&1 &
+#! /bin/bash
+find synchronizer -type f | cut -b 14- > synchronizer/manifest 

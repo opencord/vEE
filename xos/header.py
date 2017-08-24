@@ -13,10 +13,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-
-from django.db import models
-from django.db.models import *
-from core.models import Service
-import traceback
-from xos.exceptions import *
-from xos.config import Config
+attic/header.py

@@ -22,4 +22,4 @@ ENTRYPOINT []
 
 WORKDIR "/opt/xos/synchronizers/vee"
 
-CMD bash -c "cd /opt/xos/synchronizers/vee; ./run-from-api.sh"
+CMD bash -c "cd /opt/xos/synchronizers/vee; chmod 755 ./run-from-api.sh; ./run-from-api.sh"
