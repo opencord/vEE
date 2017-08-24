@@ -20,3 +20,7 @@ from core.models import Service
 import traceback
 from xos.exceptions import *
 from xos.config import Config
+
+SERVICE_NAME = 'vee'
+SERVICE_NAME_VERBOSE = 'VEE Service'
+SERVICE_NAME_VERBOSE_PLURAL = 'VEE Services'
