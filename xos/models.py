@@ -14,5 +14,14 @@
 # limitations under the License.
 
 
-export XOS_DIR=/opt/xos
-nohup python vee-synchronizer.py  -C $XOS_DIR/synchronizers/vee/vee_synchronizer_config > /dev/null 2>&1 &
+from header import *
+
+from core.models import Tenant
+
+class VEEService(Service):
+
+	KIND = "vee"
+
+	autoconfig = BooleanField(default="True", help_text="Autoconfigure VEE Service", null=False) 
+
+	pass
