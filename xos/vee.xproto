@@ -1,4 +1,5 @@
 option name = "vee";
+option app_label = "vee";
 option verbose_name = "VEE Service";
 
 message VEEService(Service){
