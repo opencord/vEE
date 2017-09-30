@@ -1,0 +1,82 @@
+<!--
+Copyright 2017-present Open Networking Foundation
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<div class="row">
+  <div class="col-xs-12">
+    <h1>CFM/OAM Jitter and Delay Monitoring</h1>
+    <p>Select the appropriate MD, MA, MEP, and DM for which you would like to monitor delay and jitter statistics.</p>
+    <a class="btn btn-success"
+       ng-style="{'visibility': vm.displayButton ? 'visible' : 'hidden'}"
+       ng-click="vm.stateChange()"
+    >
+      View Delay and Jitter
+    </a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-3">
+    <h4>Maintenance Domains (MD)</h4>
+  </div>
+  <div class="col-xs-3">
+    <h4>Maintenance Associations (MA)</h4>
+  </div>
+  <div class="col-xs-3">
+    <h4>MA Endpoints (MEP)</h4>
+  </div>
+  <div class="col-xs-3">
+    <h4>Delay Measurements (DM)</h4>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-3">
+    <div class="form-group">
+      <select class="form-control cfmlist" id="md" size="25" ng-model="vm.mdValue" ng-change="vm.triggerRefresh('md')">
+        <option ng-repeat="md in vm.mds" value="{{md.mdNumericId}}">{{md.mdName}} (ID {{md.mdNumericId}})</option>
+      </select>
+    </div>
+  </div>
+  <div class="col-xs-3">
+    <div class="form-group">
+      <select class="form-control cfmlist" id="ma" size="25" ng-model="vm.maValue" ng-change="vm.triggerRefresh('ma')">
+        <option ng-repeat="ma in vm.mas" value="{{ma.maNumericId}}">{{ma.maName}} (ID {{ma.maNumericId}})</option>
+      </select>
+    </div>
+  </div>
+  <div class="col-xs-3">
+    <div class="form-group">
+      <select class="form-control cfmlist" id="mep" size="25" ng-model="vm.mepValue" ng-change="vm.triggerRefresh('mep')">
+        <option ng-repeat="mep in vm.meps" value="{{mep.mepId}}">{{mep.mepId}}</option>
+      </select>
+    </div>
+  </div>
+  <div class="col-xs-3">
+    <div class="form-group">
+      <select class="form-control cfmlist" id="dm" size="25" ng-model="vm.dmValue" ng-change="vm.triggerRefresh('dm')">
+        <!-- <option ng-repeat="dm in vm.dms" value="{{dm.dmId}}">{{dm.dmId}}</option> -->
+        <option value="1" ng-show="vm.displaydms">1</option>
+        <option value="2" ng-show="vm.displaydms">2</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
+    <p>It may take some time for MAs and MEPs to be loaded. Thank you for your patience.</p>
+  </div>
+</div>
