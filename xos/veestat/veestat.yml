@@ -14,10 +14,18 @@
 # limitations under the License.
 
 
-from django.db import models
-from django.db.models import *
-from core.models import Service
-import traceback
-from xos.exceptions import *
-from xosconfig import Config
+tosca_definitions_version: tosca_simple_yaml_1_0
 
+description: veestat
+
+imports:
+   - custom_types/xos.yaml
+
+topology_template:
+  node_templates:
+
+    # UI Extension
+    veestat:
+      type: tosca.nodes.XOSGuiExtension
+      properties:
+        files: /xos/extensions/veestat/vendor.js, /xos/extensions/veestat/app.js
