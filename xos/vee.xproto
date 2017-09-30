@@ -3,6 +3,21 @@ option app_label = "vee";
 option verbose_name = "VEE Service";
 
 message VEEService(Service){
-     optional bool autoconfig = 1 [default = True, help_text="Autoconfigure VEE Service", null=False];
+	optional bool autoconfig = 1 [default = True, help_text="Autoconfigure VEE Service", null=False];
 }
 
+message VEETenant(TenantWithContainer){
+	optional string timestamp = 1 [help_text="Time data was recorded"];
+	
+	optional string framedelay_min = 2 [help_text="FrameDelayRangeTwoWayMin (Delay)"];
+	optional string framedelay_max = 3 [help_text="FrameDelayRangeTwoWayMax (Delay)"];
+	optional string framedelay_avg = 4 [help_text="FrameDelayRangeTwoWayAvg (Delay)"];
+	optional string framedelay_bins = 5 [help_text="FrameDelayRangeTwoWayBins (Delay)"];
+
+	optional string interframedelay_min = 6 [help_text="interFrameDelayVariationTwoWayMin (Jitter)"];
+	optional string interframedelay_max = 7 [help_text="interFrameDelayVariationTwoWayMax (Jitter))"];
+	optional string interframedelay_avg = 8 [help_text="interFrameDelayVariationTwoWayAvg (Jitter)"];
+	optional string interframedelay_bins = 9 [help_text="interFrameDelayVariationTwoWayBins (Jitter)"];
+
+	optional string historic = 10 [help_text="serialized historical JSON data"];
+}
