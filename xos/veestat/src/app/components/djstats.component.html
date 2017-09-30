@@ -1,0 +1,82 @@
+
+<!--
+Copyright 2017-present Open Networking Foundation
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<div class="row">
+    <div class="col-md-12">
+        <h1>Delay and Jitter Stats</h1>
+    </div>
+    <div ng-hide="vm.lineChart.data.length > 0">
+        <div class="loader">
+            Loading
+        </div>
+    </div>
+    <div class="row" ng-show="vm.lineChart.data.length > 0">
+        <div class="col-sm-8">
+            <h3>{{vm.graphTitle}}</h3>
+            <canvas class="chart chart-line" chart-data="vm.lineChart.data" chart-dataset-override="vm.lineChart.dataset"
+                    chart-labels="vm.lineChart.labels" chart-series="vm.lineChart.series" chart-options="vm.lineOptions" chart-colors="vm.lineColors">
+            </canvas>
+            <div class="row">
+                <div class="col-xs-2" ng-hide="vm.graphOption == 'delay'">
+                    <div class="square" style="background-color: #ffa500"></div>
+                    <label>Jitter Max</label>
+                </div>
+                <div class="col-xs-2" ng-hide="vm.graphOption == 'delay'">
+                    <div class="square" style="background-color: #c55d01"></div>
+                    <label>Jitter Average</label>
+                </div>
+                <div class="col-xs-2" ng-hide="vm.graphOption == 'delay'">
+                    <div class="square" style="background-color: #8b0000"></div>
+                    <label>Jitter Min</label>
+                </div>
+                <div class="col-xs-2" ng-hide="vm.graphOption == 'jitter'">
+                    <div class="square" style="background-color: #add8e6"></div>
+                    <label>Delay Max</label>
+                </div>
+                <div class="col-xs-2" ng-hide="vm.graphOption == 'jitter'">
+                    <div class="square" style="background-color: #6f6db9"></div>
+                    <label>Delay Average</label>
+                </div>
+                <div class="col-xs-2" ng-hide="vm.graphOption == 'jitter'">
+                    <div class="square" style="background-color: #00008b"></div>
+                    <label>Delay Min</label>
+                </div>
+            </div>
+            <div class="btn-group">
+                <label class="btn btn-primary" ng-model="vm.graphOption" uib-btn-radio="'both'" ng-click="vm.renderGraph()">Delay and Jitter</label>
+                <label class="btn btn-primary" ng-model="vm.graphOption" uib-btn-radio="'delay'" ng-click="vm.renderGraph()">Delay only</label>
+                <label class="btn btn-primary" ng-model="vm.graphOption" uib-btn-radio="'jitter'" ng-click="vm.renderGraph()">Jitter only</label>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="row">
+                <div class="col-sm-12" style="margin-bottom: 50px">
+                    <h3>Current Delay Bin</h3>
+                    <canvas class="chart chart-bar" chart-data="vm.delayBin.data" chart-dataset-override="vm.delayBin.dataset"
+                            chart-labels="vm.delayBin.labels" chart-series="vm.delayBin.series" chart-options="vm.options">
+                    </canvas>
+                </div>
+                <div class="col-sm-12">
+                    <h3>Current Jitter Bin</h3>
+                    <canvas class="chart chart-bar" chart-data="vm.jitterBin.data" chart-dataset-override="vm.jitterBin.dataset"
+                            chart-labels="vm.jitterBin.labels" chart-series="vm.jitterBin.series" chart-options="vm.options">
+                    </canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
