@@ -16,6 +16,7 @@
 
 from synchronizers.new_base.ansible_helper import run_template_ssh #if needed
 from synchronizers.new_base.SyncInstanceUsingAnsible import SyncInstanceUsingAnsible
+from synchronizers.new_base.syncstep import SyncStep
 from synchronizers.new_base.modelaccessor import *
 
 class SyncVEEService(SyncStep):
