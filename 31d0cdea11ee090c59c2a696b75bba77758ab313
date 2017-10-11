@@ -93,6 +93,30 @@
       "revId": "31d0cdea11ee090c59c2a696b75bba77758ab313",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a5c5d37_ee760506",
+        "filename": "xos/veestat/conf/proxy.js",
+        "patchSetId": 7
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2017-10-11T17:18:58Z",
+      "side": 1,
+      "message": "Is this randomly generated or a fixed ip that can be treated as constant ?",
+      "parentUuid": "9a5c5d37_4e9e3158",
+      "range": {
+        "startLine": 21,
+        "startChar": 37,
+        "endLine": 21,
+        "endChar": 51
+      },
+      "revId": "31d0cdea11ee090c59c2a696b75bba77758ab313",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
     }
   ]
 }
