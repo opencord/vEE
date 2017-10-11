@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "9a5c5d37_2ea3fd9f",
+        "filename": "xos/vee.xproto",
+        "patchSetId": 7
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1000224
+      },
+      "writtenOn": "2017-10-11T16:16:51Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9a5c5d37_8e79c995",
+      "range": {
+        "startLine": 6,
+        "startChar": 0,
+        "endLine": 6,
+        "endChar": 1
+      },
+      "revId": "31d0cdea11ee090c59c2a696b75bba77758ab313",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9a5c5d37_6e6e95cb",
         "filename": "xos/veestat/conf/proxy.js",
         "patchSetId": 7
@@ -36,6 +60,30 @@
       "writtenOn": "2017-10-11T11:16:00Z",
       "side": 1,
       "message": "just out of curiosity, what is this address ?",
+      "range": {
+        "startLine": 21,
+        "startChar": 37,
+        "endLine": 21,
+        "endChar": 51
+      },
+      "revId": "31d0cdea11ee090c59c2a696b75bba77758ab313",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a5c5d37_4e9e3158",
+        "filename": "xos/veestat/conf/proxy.js",
+        "patchSetId": 7
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1000224
+      },
+      "writtenOn": "2017-10-11T16:16:51Z",
+      "side": 1,
+      "message": "this is the XOS container address",
+      "parentUuid": "9a5c5d37_6e6e95cb",
       "range": {
         "startLine": 21,
         "startChar": 37,
