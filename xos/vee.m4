@@ -43,3 +43,15 @@ node_types:
                 type: string
                 required: false
 
+    tosca.nodes.VEEServiceInstance:
+        derived_from: tosca.nodes.Root
+        description: >
+            A VEE Tenant.
+        properties:
+            xos_base_tenant_props
+            s_tag:
+                type: integer
+                required: false
+            c_tag:
+                type: integer
+                required: false
