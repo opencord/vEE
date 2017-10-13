@@ -32,5 +32,5 @@ topology_template:
           xproto: ./
           synchronizer: synchronizer/manifest
           synchronizer_run: vee-synchronizer.py
-          tosca_resource: tosca/resources/veeservice.py
+          tosca_resource: tosca/resources/veeservice.py, tosca/resources/veeserviceinstance.py
           tosca_custom_types: vee.yaml

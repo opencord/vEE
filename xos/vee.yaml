@@ -19,6 +19,7 @@ tosca_definitions_version: tosca_simple_yaml_1_0
 # compile this with "m4 vee.m4 > vee.yaml"
 
 # include macros
+
 # Note: Tosca derived_from isn't working the way I think it should, it's not
 #    inheriting from the parent template. Until we get that figured out, use
 #    m4 macros do our inheritance
@@ -106,3 +107,22 @@ node_types:
                 type: string
                 required: false
 
+    tosca.nodes.VEEServiceInstance:
+        derived_from: tosca.nodes.Root
+        description: >
+            A VEE Tenant.
+        properties:
+            kind:
+                type: string
+                default: generic
+                description: Kind of tenant
+            service_specific_id:
+                type: string
+                required: false
+                description: Service specific ID opaque to XOS but meaningful to service
+            s_tag:
+                type: integer
+                required: false
+            c_tag:
+                type: integer
+                required: false
