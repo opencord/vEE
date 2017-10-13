@@ -6,3 +6,10 @@ message VEEService(Service){
      optional bool autoconfig = 1 [default = True, help_text="Autoconfigure VEE Service", null=False];
 }
 
+message VEEServiceInstance (ServiceInstance){
+     option kind = "vEE";
+     option verbose_name = "vEE ServiceInstance";
+
+     optional int32 s_tag = 1 [help_text = "s-tag", null = True, db_index = False, blank = True];
+     optional int32 c_tag = 2 [help_text = "c-tag", null = True, db_index = False, blank = True];
+}
