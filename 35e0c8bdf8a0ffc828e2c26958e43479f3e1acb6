@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a5c5d37_d6ee338b",
+        "filename": "xos/vee-onboard.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2017-10-18T09:23:46Z",
+      "side": 0,
+      "message": "for knowledge sake, is this picked up automatically ?",
+      "range": {
+        "startLine": 33,
+        "startChar": 0,
+        "endLine": 34,
+        "endChar": 47
+      },
+      "revId": "35e0c8bdf8a0ffc828e2c26958e43479f3e1acb6",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    }
+  ]
+}
