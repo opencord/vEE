@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a5c5d37_76ed478b",
+        "filename": "xos/header.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2017-10-18T09:24:44Z",
+      "side": 1,
+      "message": "there is no symlink here, is it missing or the commit message is wrong ?",
+      "revId": "d599f2ed84d11de1f7e4e96958ea703291611542",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    }
+  ]
+}
