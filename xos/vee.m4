@@ -32,21 +32,11 @@ node_types:
         properties:
             xos_base_props
             xos_base_service_props
-            backend_network_label:
-                type: string
-                required: false
-                description: Label that matches network used to connect HPC and BBS services.
-            dns_servers:
-                type: string
-                required: false
-            node_label:
-                type: string
-                required: false
 
     tosca.nodes.VEEServiceInstance:
         derived_from: tosca.nodes.Root
         description: >
-            A VEE Tenant.
+            A VEE Service Instance.
         properties:
             xos_base_tenant_props
             s_tag:
