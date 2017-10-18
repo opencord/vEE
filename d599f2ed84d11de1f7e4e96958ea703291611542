@@ -34,6 +34,24 @@
       "revId": "d599f2ed84d11de1f7e4e96958ea703291611542",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a5c5d37_3148f92c",
+        "filename": "xos/header.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2017-10-18T17:02:21Z",
+      "side": 1,
+      "message": "Let\u0027s merge the patch and see if this properly shows up in GitHub and code",
+      "parentUuid": "9a5c5d37_b1874961",
+      "revId": "d599f2ed84d11de1f7e4e96958ea703291611542",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
     }
   ]
 }
