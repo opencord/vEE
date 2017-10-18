@@ -22,6 +22,30 @@
       "revId": "35e0c8bdf8a0ffc828e2c26958e43479f3e1acb6",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a5c5d37_11b9752e",
+        "filename": "xos/vee-onboard.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1000016
+      },
+      "writtenOn": "2017-10-18T16:24:46Z",
+      "side": 0,
+      "message": "The synchronizer containers are now built from a dockerfile, so the core no longer needs to be explicitly told the files that make up a synchronizer.",
+      "parentUuid": "9a5c5d37_d6ee338b",
+      "range": {
+        "startLine": 33,
+        "startChar": 0,
+        "endLine": 34,
+        "endChar": 47
+      },
+      "revId": "35e0c8bdf8a0ffc828e2c26958e43479f3e1acb6",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
     }
   ]
 }
