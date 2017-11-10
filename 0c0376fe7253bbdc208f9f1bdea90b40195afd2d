@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a5c5d37_16e4b939",
+        "filename": "xos/veestat/Dockerfile",
+        "patchSetId": 20
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1000011
+      },
+      "writtenOn": "2017-11-10T17:28:14Z",
+      "side": 1,
+      "message": "should be `veestat-synchronizer`",
+      "range": {
+        "startLine": 28,
+        "startChar": 26,
+        "endLine": 28,
+        "endChar": 35
+      },
+      "revId": "0c0376fe7253bbdc208f9f1bdea90b40195afd2d",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    }
+  ]
+}
