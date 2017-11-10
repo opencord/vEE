@@ -22,6 +22,30 @@
       "revId": "bc40ccbf7944d9ee949418739c1c00a68566d3bd",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a5c5d37_965d49ec",
+        "filename": "xos/veestat/src/app/components/cfmstat.component.ts",
+        "patchSetId": 21
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 1000224
+      },
+      "writtenOn": "2017-11-10T18:57:14Z",
+      "side": 1,
+      "message": "lineColors is intended to be the lineColors currently in use on the graph, initialized to be all colors when the app first loads -- maybe there is some better way to handle changing line colors?",
+      "parentUuid": "9a5c5d37_5648f12c",
+      "range": {
+        "startLine": 111,
+        "startChar": 2,
+        "endLine": 111,
+        "endChar": 40
+      },
+      "revId": "bc40ccbf7944d9ee949418739c1c00a68566d3bd",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
     }
   ]
 }
