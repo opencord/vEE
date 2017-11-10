@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a5c5d37_5648f12c",
+        "filename": "xos/veestat/src/app/components/cfmstat.component.ts",
+        "patchSetId": 21
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2017-11-10T18:46:35Z",
+      "side": 1,
+      "message": "Why do we need this?",
+      "range": {
+        "startLine": 111,
+        "startChar": 2,
+        "endLine": 111,
+        "endChar": 40
+      },
+      "revId": "bc40ccbf7944d9ee949418739c1c00a68566d3bd",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    }
+  ]
+}
