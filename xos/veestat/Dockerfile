@@ -1,31 +1,35 @@
-# veestat
-FROM xosproject/xos-gui-extension-builder:candidate
+# xosproject/gui-extension-veestat-base
+FROM xosproject/xos-gui-builder:candidate as xos-veestat-base
 
-# Set environment vars
 ENV CODE_SOURCE .
 ENV CODE_DEST /var/www
 ENV VHOST /var/www/dist
 
-# Add the app deps
 COPY ${CODE_SOURCE}/package.json ${CODE_DEST}/package.json
 COPY ${CODE_SOURCE}/typings.json ${CODE_DEST}/typings.json
 
-# Install Deps
 WORKDIR ${CODE_DEST}
 RUN npm install
 RUN npm run typings
 
-# Build the app
 COPY ${CODE_SOURCE}/conf ${CODE_DEST}/conf
 COPY ${CODE_SOURCE}/gulp_tasks ${CODE_DEST}/gulp_tasks
 COPY ${CODE_SOURCE}/src ${CODE_DEST}/src
 COPY ${CODE_SOURCE}/gulpfile.js ${CODE_DEST}/gulpfile.js
 COPY ${CODE_SOURCE}/tsconfig.json ${CODE_DEST}/tsconfig.json
 COPY ${CODE_SOURCE}/tslint.json ${CODE_DEST}/tslint.json
+RUN npm run build
 
-# Label image
+# xosproject/gui-extension-sample
+FROM alpine:latest
+
+ENV VHOST /var/www/dist
+WORKDIR ${VHOST}
+
+COPY --from=xos-veestat-base ${VHOST} /tmp
+
 ARG org_label_schema_schema_version=1.0
-ARG org_label_schema_name=veestat-synchronizer
+ARG org_label_schema_name=xos-gui-extension-veestat
 ARG org_label_schema_version=unknown
 ARG org_label_schema_vcs_url=unknown
 ARG org_label_schema_vcs_ref=unknown
@@ -45,5 +49,3 @@ LABEL org.label-schema.schema-version=$org_label_schema_schema_version \
       org.opencord.component.xos-gui.vcs-ref=$org_opencord_component_xos_gui_vcs_ref \
       org.opencord.component.xos-gui.vcs-url=$org_opencord_component_xos_gui_vcs_url \
       org.opencord.component.xos-gui.version=$org_opencord_component_xos_gui_version
-
-RUN npm run build
