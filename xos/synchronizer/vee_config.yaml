@@ -12,10 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-name: vee-synchronizer
+name: vee
 accessor:
   username: xosadmin@opencord.org
   password: "@/opt/xos/services/vee/credentials/xosadmin@opencord.org"
+required_models:
+  - VEEService
+  - VEEServiceInstance
 dependency_graph: "/opt/xos/synchronizers/vee/model-deps"
 steps_dir: "/opt/xos/synchronizers/vee/steps"
 sys_dir: "/opt/xos/synchronizers/vee/sys"
+models_dir: "/opt/xos/synchronizers/vee/models"
