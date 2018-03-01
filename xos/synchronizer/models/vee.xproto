@@ -9,6 +9,7 @@ message VEEService(Service){
 message VEEServiceInstance (ServiceInstance){
      option kind = "vEE";
      option verbose_name = "vEE ServiceInstance";
+     option owner_class_name="VEEService";
 
      optional int32 s_tag = 1 [help_text = "s-tag", null = True, db_index = False, blank = True];
      optional int32 c_tag = 2 [help_text = "c-tag", null = True, db_index = False, blank = True];
